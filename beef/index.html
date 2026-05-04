@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beef Import Tariff Calculator</title>
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Beef Import Tariff Calculator</h1>
+
+<input id="value" placeholder="Product value">
+<input id="rate" placeholder="Tariff (%)">
+
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+
+<a href="../index.html">← Back</a>
+
+<script>
+function calc(){let v=+value.value||0;let r=+rate.value||20;res.innerText='$'+(v*(r/100)).toFixed(2);} 
+</script>
+
+</body>
+</html>
